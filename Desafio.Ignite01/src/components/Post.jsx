@@ -7,17 +7,19 @@ function Post() {
       <header className={styles.header}>
         <div>
           <p>Tarefas criadas</p>
-          <span>3</span>
+          <span>4</span>
         </div>
 
         <div>
           <p>Concluídas</p>
-          <span>2 de 10</span>
+          <span>2 de 4</span>
         </div>
 
          </header>
 
          <div className={styles.list}>
+          <Task/>
+          <Task/>
           <Task/>
           <Task/>
         </div>

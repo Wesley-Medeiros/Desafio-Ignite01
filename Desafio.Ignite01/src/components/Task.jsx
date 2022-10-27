@@ -1,15 +1,21 @@
 import styles from './task.module.css'
+import Trash from '../assets/trash.svg'
+
+
 
 function Task() {
   return(
     <div className={styles.task}>
-      <button>
-        check
+      <button className={styles.check}>
+        <div/>
       </button>
 
-      <p>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, ad? Ducimus, vel.</p>
 
-      <button>apagar</button>
+      <button className={styles.delete}>
+        <img src={Trash} alt="" />
+      
+      </button>
 
     </div>
   )
