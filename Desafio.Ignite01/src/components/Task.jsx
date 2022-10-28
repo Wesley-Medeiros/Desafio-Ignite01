@@ -3,16 +3,26 @@ import Trash from '../assets/trash.svg'
 
 
 
-function Task() {
+function Task({content, onDeleteTask}) {
+
+
+  function handleDeleteTask() {
+    
+
+    onDeleteTask(content)
+  }
+
+
   return(
+    
     <div className={styles.task}>
       <button className={styles.check}>
         <div/>
       </button>
 
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, ad? Ducimus, vel.</p>
+      <p>{content}</p>
 
-      <button className={styles.delete}>
+      <button onClick={handleDeleteTask} className={styles.delete}>
         <img src={Trash} alt="" />
       
       </button>
